@@ -1,15 +1,12 @@
 ![Vista previa del diseño para la prueba de frontend lo encontrará en](./design/desktop-preview.jpg)
 
-
 ## Bienvenid@! 👋
-
 
 **Para este reto, necesitará entendimiento básico de HTML, CSS y (algo de) JavaScript.**
 
 ## El reto
 
 Su desafío es construir esta Landing page, integrarla con la API [rel.ink] (https://rel.ink) y que se vea lo más cerca posible del diseño.
-
 
 Sus usuarios deberían poder:
 
