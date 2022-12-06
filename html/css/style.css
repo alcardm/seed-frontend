@@ -1,0 +1,213 @@
+/* Google webfonts */
+/* poppins-500 - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/poppins-v20-latin-500.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/poppins-v20-latin-500.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/poppins-v20-latin-500.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/poppins-v20-latin-500.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/poppins-v20-latin-500.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/poppins-v20-latin-500.svg#Poppins")
+      format("svg"); /* Legacy iOS */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/poppins-v20-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/poppins-v20-latin-700.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/poppins-v20-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/poppins-v20-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/poppins-v20-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/poppins-v20-latin-700.svg#Poppins")
+      format("svg"); /* Legacy iOS */
+}
+/* end Google webfonts */
+
+/* reset */
+/* makes sizing simpler */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* dark mode user-agent-styles */
+html {
+  /* color-scheme: dark light; */
+}
+
+/* min body height */
+body {
+  min-height: 100vh;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+/* end reset */
+
+/* variables */
+:root {
+  /* colors */
+  --primary-color: hsl(257, 27%, 26%); /* Dark Violet */
+  --primary-color-alt: hsl(180, 66%, 49%); /* Cyan */
+  --secondary-color: hsl(0, 87%, 67%); /* Red */
+  --grey-color: hsl(0, 0%, 75%);
+  --grayish-violet: hsl(257, 7%, 63%);
+  --vary-dark-blue: hsl(255, 11%, 22%);
+  --very-dark-violet: hsl(260, 8%, 14%);
+
+  /* helpers */
+  --main-padding: 4rem;
+  --secondary-padding: 2rem;
+}
+/* end variables */
+
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+header,
+footer {
+  padding: var(--secondary-padding) var(--main-padding);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+main {
+  padding: var(--main-padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  min-height: 2rem;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  flex: 1 0 auto;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
+.menu li a {
+  color: var(--grey-color);
+  font-weight: 700;
+}
+
+.menu li a.btn-rounded {
+  color: #fff;
+}
+
+.menu li a.btn-rounded:hover {
+  color: var(--primary-color-alt);
+}
+
+.btn-rounded {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid var(--primary-color-alt);
+  background: var(--primary-color-alt);
+}
+
+.btn-rounded:hover {
+  background: #fff;
+  color: var(--primary-color-alt);
+}
+
+/* Main */
+.section {
+  padding: var(--main-padding) 0;
+  min-height: 3rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--very-dark-violet);
+}
+
+footer h4 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+footer li {
+  flex: 1 0 auto;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+footer li a {
+  color: var(--grey-color);
+}
+
+.social-media-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.social-media-links ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-media-links li {
+  margin-left: 1rem;
+}

@@ -8,3 +8,7 @@
 - Crear proyecto con ReactJS
 - Estructura del proyecto con componentes (revisar si son necesarias librerias para los componentes - tablas, navbar, bootstrap).
 - Consultar para integrar con API [rel.ink] (https://rel.ink) (que está rota).
+
+## Referencias
+
+- [Flexbox Menu](https://codepen.io/abbeyjfitzgerald/pen/QdZjLE)
