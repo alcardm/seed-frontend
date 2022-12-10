@@ -49,30 +49,42 @@
       </div>
     </header>
     <main>
-      <div class="section hero">
+      <div class="section section-flex hero">
         <div class="hero-cta">
-          <h2>More than just shorter links</h2>
-          <h3>
-            Build your brand’s recognition and get detailed insights on how your
-            links are performing.
-          </h3>
-          <a href="#" class="btn btn-primary btn-rounded">Get Started</a>
+          <div class="hero-container">
+            <h2>More than just shorter links</h2>
+            <h3>
+              Build your brand’s recognition and get detailed insights on how
+              your links are performing.
+            </h3>
+            <a
+              href="#"
+              class="btn btn-primary btn-rounded"
+              id="btn-get-started"
+            >
+              Get Started
+            </a>
+          </div>
         </div>
-        <div class="hero-img"></div>
+        <div class="hero-img">
+          <img src="img/illustration-working.svg" alt="Working hero" />
+        </div>
       </div>
-      <div class="section shorter-form">
-        <form>
+      <div class="section-flex shortener">
+        <form class="shorten-form">
           <input type="text" placeholder="Shorten a link here..." />
-          <input type="submit" value="Shorten It!" />
+          <button class="btn btn-primary" type="button">Shorten It</button>
         </form>
       </div>
       <div class="section statistics-info">
-        <h2>Advanced Statistics</h2>
-        <div class="statistics-info-descr">
+        <div class="statistics-title">
+          <h2>Advanced Statistics</h2>
+        </div>
+        <div class="statistics-description">
           Track how your links are performing across the web with our advanced
           statistics dashboard.
         </div>
-        <div class="statistics-card-area">
+        <div class="section-flex statistics-card-area">
           <div class="card">
             <div class="card-icon">
               <img
@@ -123,8 +135,8 @@
         </div>
       </div>
       <div class="section cta-boost">
-        <h2>Boost your links today</h2>
-        <a href="#" class="btn btn-primary btn-rounded">Get Started</a>
+        <h2 class="title">Boost your links today</h2>
+        <a href="#" class="btn btn-primary btn-rounded">Get Started </a>
       </div>
     </main>
     <footer>
