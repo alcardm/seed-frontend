@@ -3,8 +3,9 @@
 - Crear wireframe (papel) ✔
 - Crear mockup en Figma ✖
 - Escribir estructura en HTML y estilos CSS 👟
-  - Revisar `style-guide.md` para estructurar CSS
-  - Grid y flexbox
+  - Revisar `style-guide.md` para estructurar CSS ✔
+  - Grid y flexbox ✔
+  - Menú _responsive_
 - Crear proyecto con ReactJS ✔
   - Estructura del proyecto con componentes.
   - Librerias adicionales.
