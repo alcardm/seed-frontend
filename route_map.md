@@ -5,7 +5,7 @@
 - Escribir estructura en HTML y estilos CSS 👟
   - Revisar `style-guide.md` para estructurar CSS ✔
   - Grid y flexbox ✔
-  - Menú _responsive_
+  - Menú _responsive_ ✔ (¿El menú se puede escribir mejor?)
 - Crear proyecto con ReactJS ✔
   - Estructura del proyecto con componentes.
   - Librerias adicionales.
@@ -27,5 +27,6 @@
 
 ## Referencias
 
-- [Flexbox Menu](https://codepen.io/abbeyjfitzgerald/pen/QdZjLE)
+- ~~[Flexbox Menu](https://codepen.io/abbeyjfitzgerald/pen/QdZjLE)~~
 - [Flexbox Responsive Form](https://codepen.io/argyleink/pen/LYEegOO)
+- [ awulkan / FlexNav](https://github.com/awulkan/FlexNav)

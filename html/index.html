@@ -17,39 +17,35 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="img/logo.svg" alt="Shortly logo" />
-      </div>
+    <div id="nav-container">
+      <header id="nav-header">
+        <a href="#" id="nav-logo">
+          <img src="img/logo.svg" alt="Shortly logo" />
+        </a>
+        <div id="nav-menu-button">
+          <img src="img/icon-hamburger-menu.svg" alt="Menu" />
+        </div>
+      </header>
       <nav>
-        <ul id="nav-menu" class="menu" role="navigation">
+        <ul class="nav-ul hide-ul">
+          <li><a class="nav-link active-link" href="#">Features</a></li>
+          <li><a class="nav-link" href="#">Pricing</a></li>
+          <li><a class="nav-link" href="#">Resources</a></li>
+          <li class="nav-space"></li>
+          <li><a class="nav-link" href="#">Login</a></li>
           <li>
-            <a href="#">Features</a>
-          </li>
-          <li>
-            <a href="#">Pricing</a>
-          </li>
-          <li>
-            <a href="#">Resources</a>
+            <a
+              class="btn btn-primary btn-rounded btn-small"
+              id="btn-signup"
+              href="#"
+            >
+              Sign Up
+            </a>
           </li>
         </ul>
       </nav>
-      <div class="login-actions">
-        <ul id="login-links" class="menu">
-          <li>
-            <a href="#" id="btn-login">Login</a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="btn btn-primary btn-rounded btn-small"
-              id="btn-signup"
-              >Sign Up</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header>
+    </div>
+
     <main>
       <div class="section" id="hero">
         <div class="container section-flex">
@@ -145,6 +141,7 @@
         <a href="#" class="btn btn-primary btn-rounded">Get Started </a>
       </div>
     </main>
+
     <footer>
       <div class="logo">
         <div class="logo">
@@ -212,5 +209,17 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div> -->
+    <script>
+      (function () {
+        var navButton = document.querySelector("#nav-menu-button");
+        var navUl = document.querySelector(".nav-ul");
+
+        function toggleMobileMenu() {
+          navUl.classList.toggle("hide-ul");
+        }
+
+        navButton.onclick = toggleMobileMenu;
+      })();
+    </script>
   </body>
 </html>
