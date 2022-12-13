@@ -249,7 +249,8 @@ header {
   background-color: #fff;
   border-radius: 12px;
   padding: 2em;
-  max-height: 278px;
+  height: fit-content;
+  min-height: 278px;
 }
 
 .card:nth-child(1) {
@@ -344,7 +345,7 @@ footer li a {
   header {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
   }
 
   nav,
