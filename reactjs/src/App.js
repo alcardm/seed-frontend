@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./css/App.css";
+import ShortenForm from "./components/form/shortenForm";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <ShortenForm />
         <a
           className="App-link"
           href="https://reactjs.org"
