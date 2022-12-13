@@ -3,7 +3,7 @@ import validateUrl from "../helper";
 function ShortenForm(props) {
   return (
     <div>
-      <form>
+      <form className="shorten-form">
         <input
           type={"text"}
           id="input-shorten"
