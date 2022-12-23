@@ -1,4 +1,5 @@
 import validateUrl from "../helper";
+import swal from "sweetalert";
 
 function ShortenForm(props) {
   return (
@@ -27,10 +28,10 @@ function onClickSubmit() {
   // Validar
   let url = document.getElementById("input-shorten").value;
   if (!url) {
-    alert("Opps, no link in here.");
+    swal("Oops!", "No link here.", "warning");
     return false;
   } else if (!validateUrl(url)) {
-    alert("Check your link, it's not a valid one.");
+    swal("Oh oh!", "It's not a valid link.", "error");
   } else {
     console.log("el link: " + url);
     // enviar el link a la API
